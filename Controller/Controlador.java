@@ -24,7 +24,7 @@ public class Controlador {
     public void Start() {
         boolean ganar = false;
         int contador = 1;
-        while(!ganar) {
+        while (!ganar) {
 
             Menu.imprimirTurnos(jugador1, tablero);
             ganar = tablero.colocarFicha(jugador1.getFicha());
@@ -36,9 +36,9 @@ public class Controlador {
             }
         }
         Menu.imprimirTablero(tablero);
-        if (contador == 1){
+        if (contador == 1) {
             Menu.imprimirGanador(jugador2.getJugador());
-        }else {
+        } else {
             Menu.imprimirGanador(jugador1.getJugador());
         }
 
